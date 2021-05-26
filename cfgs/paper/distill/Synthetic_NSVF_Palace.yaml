@@ -1,0 +1,43 @@
+blender_half_res: false
+dataset_dir: data/nsvf/Synthetic_NSVF/Palace
+dataset_type: nsvf
+discovery:
+  alpha_distance: 0.0211
+  alpha_rgb_initalization: pass_actual_nonlinearity
+  bias_initialization_method: standard
+  convert_density_to_alpha: true
+  direction_layer_size: 32
+  equal_split_metric: mse
+  hidden_layer_size: 32
+  iterations: 150000
+  late_feed_direction: true
+  max_num_networks: 512
+  network_rng_seed: 8078673
+  nonlinearity_initalization: pass_actual_nonlinearity
+  num_examples_per_network: 1020000
+  num_frequencies: 10
+  num_frequencies_direction: 4
+  num_hidden_layers: 2
+  num_train_examples_per_network: 1000000
+  outputs: color_and_density
+  quantile_se: 0.99
+  query_batch_size: 80000
+  refeed_position_index: None
+  test_batch_size: 512
+  test_error_metric: quantile_se
+  test_every: 500
+  train_batch_size: 128
+  use_same_initialization_for_all_networks: true
+  weight_initialization_method: kaiming_uniform
+fixed_resolution:
+- 16
+- 16
+- 13
+max_error: 100000
+performance_monitoring: false
+pretrained_cfg_path: cfgs/paper/pretrain/Synthetic_NSVF_Palace.yaml
+pretrained_checkpoint_path: logs/paper/pretrain/Synthetic_NSVF_Palace/checkpoint_0600000.pth
+render_only: true
+restart_after_checkpoint: true
+skip_final: true
+tree_type: kdtree_longest

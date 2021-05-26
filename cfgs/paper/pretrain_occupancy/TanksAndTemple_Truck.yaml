@@ -1,0 +1,14 @@
+dataset_dir: data/nsvf/TanksAndTemple/Truck
+dataset_type: nsvf
+pretrained_cfg_path: cfgs/paper/pretrain/TanksAndTemple_Truck.yaml
+pretrained_checkpoint_path: logs/paper/pretrain/TanksAndTemple_Truck/checkpoint_0600000.pth
+resolution:
+- 240
+- 112
+- 256
+subsample_resolution:
+- 3
+- 3
+- 3
+threshold: 10
+voxel_batch_size: 16384

@@ -1,0 +1,22 @@
+name: kilonerf
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+  - nvidia
+dependencies:
+  - pip=21.0.1
+  - python=3.8
+  - pytorch=1.8.1
+  - torchvision
+  - cudatoolkit=11.1.1
+  - numpy
+  - scikit-image
+  - scipy
+  - tqdm
+  - imageio
+  - pyyaml
+  - pip:
+    - imageio-ffmpeg
+    - lpips
+    - opencv-python

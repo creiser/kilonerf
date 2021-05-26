@@ -1,0 +1,14 @@
+dataset_dir: data/nsvf/BlendedMVS/Character
+dataset_type: nsvf
+pretrained_cfg_path: cfgs/paper/pretrain/BlendedMVS_Character.yaml
+pretrained_checkpoint_path: logs/paper/pretrain/BlendedMVS_Character/checkpoint_0100000.pth
+resolution:
+- 128
+- 256
+- 128
+subsample_resolution:
+- 3
+- 3
+- 3
+threshold: 10
+voxel_batch_size: 16384

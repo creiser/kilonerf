@@ -1,0 +1,12 @@
+render:
+    fast_sampling: True # this activates a better implementation of empty space skipping and early ray termination
+    max_samples_per_ray: 8
+    transmittance_threshold: 0.01
+
+performance_monitoring: False
+render_to_screen: True
+orbit_camera:
+        center: [0., 0., 0.]
+        radius: 4.2
+        azimuth: 5.2
+        inclination: 1.

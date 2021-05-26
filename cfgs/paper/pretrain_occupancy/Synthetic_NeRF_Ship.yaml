@@ -1,0 +1,14 @@
+dataset_dir: data/nsvf/Synthetic_NeRF/Ship
+dataset_type: nsvf
+pretrained_cfg_path: cfgs/paper/pretrain/Synthetic_NeRF_Ship.yaml
+pretrained_checkpoint_path: logs/paper/pretrain/Synthetic_NeRF_Ship/checkpoint_0600000.pth
+resolution:
+- 256
+- 256
+- 144
+subsample_resolution:
+- 3
+- 3
+- 3
+threshold: 10
+voxel_batch_size: 16384

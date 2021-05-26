@@ -1,0 +1,14 @@
+dataset_dir: data/nsvf/TanksAndTemple/Caterpillar
+dataset_type: nsvf
+pretrained_cfg_path: cfgs/paper/pretrain/TanksAndTemple_Caterpillar.yaml
+pretrained_checkpoint_path: logs/paper/pretrain/TanksAndTemple_Caterpillar/checkpoint_0600000.pth
+resolution:
+- 256
+- 144
+- 240
+subsample_resolution:
+- 3
+- 3
+- 3
+threshold: 10
+voxel_batch_size: 16384

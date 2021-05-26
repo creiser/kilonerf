@@ -1,0 +1,7 @@
+kilonerf_cuda.egg-info
+dist/*.egg
+build
+*.prof
+kilonerf_cuda.cpython-38-x86_64-linux-gnu.so
+tests/*.pth
+tests/*.pth
